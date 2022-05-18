@@ -1,0 +1,86 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body {
+	background-color: rgba(0,0,0,0.4);
+	font-family: 'Mukta', sans-serif;
+	min-height: 100vh;
+}
+
+.calc-wrapper {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 470px;
+	box-shadow: 0 0 50px 10px rgba(0,0,0,0.8);
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.8);
+	transition: transform 0.1s ease;
+}
+
+table, td, th {
+	font-size: 40px;
+	font-weight: bold;
+	width: 100%;
+	border: 0.1px solid black;
+	border-collapse: collapse;
+}
+
+table {
+	background-color: white;
+}
+
+th {
+	display: flex;
+}
+
+input {
+	text-align: right;
+	width: 100%;
+	padding: 40px 10px;
+	font-size: 50px;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: #424642;
+}
+
+.remove-element {
+	padding: 0px 15px;
+}
+
+td {
+	text-align: center;
+	padding: 20px 15px;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	user-select: none;
+	transition: color 0.2s linear,
+				background-color 0.2s linear;
+}
+
+td:hover {
+	background-color: rgba(0,0,0,0.4);
+	color: rgba(0,0,0, 1);
+}
+
+td:active {
+	background-color: rgba(0,0,0,1);
+	color: white;
+}
+
+tr {
+	display: flex;
+}

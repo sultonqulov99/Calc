@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>calculator</title>
+</head>
+<body>
+	<div class="calc-wrapper">
+		<table>
+			<thead>
+				<tr>
+					<th>
+						<input disabled type="text">
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="remove-element c">C</td>
+					<td class="remove-element r">R</td>
+				</tr>
+				<tr>
+					<td class="num">7</td>
+					<td class="num">8</td>
+					<td class="num">9</td>
+					<td data-sign="+" class="sign">+</td>
+				</tr>
+				<tr>
+					<td class="num">6</td>
+					<td class="num">5</td>
+					<td class="num">4</td>
+					<td data-sign="*" class="sign">✕</td>
+				</tr>
+				<tr>
+					<td class="num">3</td>
+					<td class="num">2</td>
+					<td class="num">1</td>
+					<td data-sign="-" class="sign">-</td>
+				</tr>
+				<tr>
+					<td class="dot">.</td>
+					<td class="num">0</td>
+					<td class="equal">=</td>
+					<td data-sign="/" class="sign">÷</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<script src="./js/move.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
